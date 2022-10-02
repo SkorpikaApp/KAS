@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>text file read n save.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <input type="file" id="files" name="files[]"></input>
+    <textarea type="text" id="ta"></textarea>
+    
+    
+    <br><br><br><br><br><br><br><br><br>
+    
+    Имя <input id="id1" value="Василий первый">
+    Фамилия <input id="id2" value="Первый Федор">
+    <br><br><br>
+    <input type="button" value="Добавить имя" onclick="addname()">
+
+
+
+
+
+    <script>
+        let jsonFormat = {};
+        document.getElementById('files').onchange = function () {
+            let file = this.files[0];
+            console.log(file);
+            let reader = new FileReader();
+            reader.onload = function () {
+                console.log(this.result);                
+                jsonFormat = JSON.parse(this.result);
+                document.getElementById("ta").value = jsonFormat;
+                console.log(typeof jsonFormat + " " + jsonFormat);
+                console.log(jsonFormat[1]);
+
+            }
+            reader.readAsText(file);
+        }
+
+        function addname(params) {
+            jsonFormat[3]=document.getElementById('id2').value;
+            console.log(jsonFormat);
+            jsonFormat[0]=document.getElementById('id2').value;
+            console.log(jsonFormat);
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

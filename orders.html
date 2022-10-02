@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Программа КАС Участок 7</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css" media="print">
+        .no-print { display: none; }
+     </style>
+     
+</head>
+
+
+<!-- <body style="background:linear-gradient(to bottom, #b9b5ac 17%, #d1cfc8 26%, #d1cfc8 56%, #b9b5ac 73%)"></body> -->
+
+<body style="background:#b9b5ac">
+    <div class="no-print" style="background:linear-gradient(to bottom, #b9b5ac 17%, #d1cfc8 26%, #d1cfc8 56%, #b9b5ac 73%)">
+        <div style="text-align:center;">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align:left; width: 20%">
+                        <!-- <button id="idBUTBack" class="butonOrders" style="font-size: 14px; width:80%">Вернуться</button> -->
+                        <button onclick="window.location.href = 'orderPrint.html';" class="butonOrders">Просмотр
+                            Приказа</button>
+                    </td>
+                    <td style="text-align:center; width: 50%">
+                        <label for="selectRegion" class="labelOrders" style="width: 15%"><b>РЕГИОН</b></label>
+                        <select id="idRegion" name="selectRegion" class="selectOrders" style="width: 60%">
+                            <option value="Выбор региона...">Выбор региона...</option>
+                            <option value="78 - Санкт-Петербург" selected>78 - Санкт-Петербург</option>
+                            <option value="47 - Ленинградская обл.">47 - Ленинградская обл.</option>
+                            <option value="77 - Москва">77 - Москва</option>
+                        </select>
+                    </td>
+
+                    <td style="text-align:right;  width: 30%">
+                        <label for="idNUMS" id="idNUMSLabel" class="labelOrders"
+                            style="width: 15%; visibility: hidden"><b>Судебный Участок</b></label>
+                        <select id="idNUMS" class="selectOrders" name="NUMS" style="width: 60%; visibility: hidden">
+                            <option value="7" selected>7</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <script></script>
+
+        <table style="border:1px solid rgb(190, 183, 183); border-collapse:collapse; width: 100%;" border="1px"
+            class="no_english">
+            <!-- <table style="border:1px solid rgb(48, 46, 46); border-collapse:collapse; width: 100%;" border="1px"> -->
+            <!-- <caption class="labelOrders" style="font-size: 17px;">Подготовка судбного приказа. Занесение данных в реестр.
+        Участок № 7. Мировой судья Иванова И.И.</caption> -->
+
+
+            <tr style="height: 20px"></tr><!-- Разделитель -->
+
+            <tr style="visibility:collapse">
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+                <td><input type="text" style="width: 21px; height: 0px;"></td>
+            </tr>
+
+            <!-- Участок. Мировой судья.  Сопроводительное письмо-->
+            <tr style="text-align: center">
+                <!-- <td colspan="15" style="text-align: right; border-top: 1px solid"> -->
+                <td colspan="13" style="text-align: right">
+                    <label for="idJudOnBoard" class="labelOrders">Мировой судья</label>
+                    <select name="ms" id="idJudOnBoard" class="selectOrders" style="width: 30%">
+                        <option value="Судья по штату">по штату</option>
+                        <option value="Судья в отпуске">в отпуске</option>
+                        <option value="Судья не назначен">не назначен</option>
+                    </select>
+                    <label for="JudFIO" class="labelOrders">Ф.И.О.</label>
+                    <input list="JudFIO" id="idJudFIO" class="selectOrders clearValue" style="width: 40%">
+
+                    <label for="nouchio" id="idNumSUioLBL" class="labelOrders" style="visibility: hidden">Номер участка
+                        ИО</label>
+                    <input type="text" name="nouchio" id="idNumSUio" class="selectOrders clearValue"
+                        style="width: 20%; visibility: hidden">
+                    <label for="JudFIO" id="idJudFIOioLBL" class="labelOrders" style="visibility: hidden">Ф.И.О.
+                        ИО</label>
+                    <input list="JudFIOio" id="idJudFIOio" class="selectOrders clearValue"
+                        style="width: 40%; visibility: hidden">
+                    <datalist id="JudFIOio">
+                        <option value=""></option>
+                    </datalist>
+                </td>
+
+                <td colspan="17" style="text-align: right;">
+                    <span class="labelOrders">Сопроводительное письмо:</span>
+                    <select id="idSPprint" class="selectOrders" style="width: 37%">
+                        <option value="Не печатать">Не печатать</option>
+                        <option value="Подписывает судья">Подписывает судья</option>
+                        <option value="Подписывет помощник">Подписывет помощник</option>
+                    </select>
+                    <br>
+                    <label for="sppom" id="idSUPomLabel" class="labelOrders  clearValue"
+                        style="visibility: hidden">Ф.И.О.
+                        помощника</label>
+                    <input list="idSUPomListLIST" id="idSUPomList" class="selectOrders clearValue"
+                        style="width: 25%; visibility: hidden;">
+                    <datalist id="idSUPomListLIST" class="datalist">
+                        <option value=""></option>
+                    </datalist>
+
+                    <label for=" spdol" id="idSPomDoljLabel" class="labelOrders"
+                        style="visibility: hidden;">Должность</label>
+                    <input list="spdol" id="idSPomDolj" class="selectOrders"
+                        style="visibility: hidden; width: 36%; font-size: 14px">
+                    <datalist id="spdol">
+                        <option value=""></option>
+                        <option value="Помощник м/с">Помощник м/с</option>
+                        <option value="Секретарь">Секретарь</option>
+                        <option value="Секретарь суда">Секретарь суда</option>
+                        <option value="Секретарь судебного заседания">Секретарь судебного заседания</option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr style="height: 10px"></tr><!-- Разделитель -->
+
+            <!-- LABEL Дата УИД Производство номер ИФМНС ОКТМО -->
+            <tr align="center">
+                <td colspan="5">
+                    <label for="dataorder" class="labelOrders">Дата приказа</label>
+                </td>
+                <td colspan="9">
+                    <label for="uid" class="labelOrders">УИД</label>
+                </td>
+                <td colspan="5">
+                    <label for="dataorder" class="labelOrders">Производство №</label>
+                </td>
+                <td colspan="4">
+                    <label for="mifnsvz" class="labelOrders">МИФНС (взыскатель)</label>
+                </td>
+                <td colspan="7">
+                    <label for="mifnsGP" class="labelOrders">МИФНС и ОКТМО (ГосПошлина)</label>
+                </td>
+                <!-- <td colspan="3">
+                    <label for="mifnsGPoktmo" class="labelOrders">ОКТМО (ГосПошлина)</label><br>
+                </td> -->
+            </tr>
+
+            <!-- Дата УИД Производство номер ИФМНС ОКТМО -->
+            <tr align="center">
+                <td colspan="5">
+                    <input type="date" id="idDataOrder" class="selectOrders">
+                </td>
+                <td colspan="9">
+                    <input class="selectOrders clearValue" id="idUID1" style="width: 33%">
+                    <input class="selectOrders clearValue" id="idUID2" style="width: 12%">
+                    <input class="selectOrders clearValue" id="idUID3" style="width: 20%">
+                    <input class="selectOrders clearValue" id="idUID4" style="width: 10%">
+                </td>
+                <td colspan="5">
+                    <input class="selectOrders clearValue" id="idSOno1" style="width: 15%">
+                    <input class="selectOrders clearValue" id="idSOno2" style="width: 30%">
+                    <input class="selectOrders clearValue" id="idSOno3" style="width: 30%">
+                </td>
+                <td colspan="4">
+                    <select name="mifnsvz" id="idMFNS_No" class="selectOrders">
+                        <option value=""></option>
+                        <option value="МИФНС 5">МИФНС 5</option>
+                        <option value="МИФНС 6">МИФНС 6</option>
+                        <option value="МИФНС 7">МИФНС 7</option>
+                    </select>
+                    <br>
+                </td>
+                <td colspan="4">
+                    <select name="mifnsvz" id="idMFNSGP_No" class="selectOrders">
+                        <option value=""></option>
+                        <option value="МИФНС 5">МИФНС 5</option>
+                        <option value="МИФНС 6">МИФНС 6</option>
+                        <option value="МИФНС 7">МИФНС 7</option>
+                    </select>
+                    <br>
+                </td>
+                <td colspan="3">
+                    <input id="idMFNS_OKTMO_GP" class="selectOrders clearValue">
+                </td>
+            </tr>
+
+            <tr style="height: 10px"></tr><!-- Разделитель -->
+
+            <!-- К должнику  -->
+            <tr align="center">
+                <td colspan="10">
+                    <span class="labelOrders">К должнику: Фамилия</span><br>
+                    <input type="text" id="idBGName11" class="selectOrders clearValue">
+                </td>
+                <td colspan="9">
+                    <span class="labelOrders">Имя</span><br>
+                    <input list="idBGName12DL" id="idBGName12" class="selectOrders clearValue">
+                    <datalist id="idBGName12DL">
+                        <option value=""></option>
+                    </datalist>
+                </td>
+                <td colspan="11">
+                    <span class="labelOrders">Отчество</span><br>
+                    <input list="idBGName13DL" id="idBGName13" class="selectOrders clearValue">
+                    <datalist id="idBGName13DL">
+                        <option value=""></option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <!-- М/Ж Добавить имя -->
+            <tr align="center">
+                <td colspan="9">
+                    <span class="labelOrders">Взыскать с должника: Фамилия</span><br>
+                </td>
+                <td colspan="11">
+                    <button id="idM" class="butonOrders" style="width: 8%;">М</button>
+                    <button id="idW" class="butonOrders" style="width: 8%;">Ж</button>
+                    <button id="idMW" class="butonOrders" style="width: 75%;">Добавить имя/отчество в
+                        базу</button>
+                </td>
+                <td colspan="10">
+                    <span class="labelOrders">Отчество</span><br>
+                </td>
+            </tr>
+
+            <!-- Взыскать с должника -->
+            <tr align="center">
+                <td colspan="10">
+                    <input type="text" id="idBGName21" class="selectOrders clearValue">
+                </td>
+                <td colspan="9">
+                    <input type="text" id="idBGName22" class="selectOrders clearValue">
+                </td>
+                <td colspan="11">
+                    <input type="text" id="idBGName23" class="selectOrders clearValue">
+                </td>
+            </tr>
+
+            <!--  STOPИндекс LABEL: Город Улица STOPКорпус STOPЛитера Квартира  -->
+            <tr align="center">
+                <td colspan="3">
+                    <input type="checkbox" id="idCBBGIndex" title="Указывать в приказе почтовый индекс должника">
+                    <label for="idCBBGIndex" class="labelOrders"
+                        title="Указывать в приказе почтовый индекс должника">Индекс</label>
+                </td>
+                <td colspan="6">
+                    <span class="labelOrders">Место жительства должника: Город</span>
+                </td>
+                <td colspan="7">
+                    <span class="labelOrders">Улица</span>
+                </td>
+                <td colspan="3">
+                    <span class="labelOrders">Дом</span>
+                </td>
+                <td colspan="4">
+                    <input type="checkbox" id="idCBKorpStop" title="Останавливаться при заполнении приказа">
+                    <label for="idCBKorpStop" class="labelOrders"
+                        title="Останавливаться при заполнении приказа">Корпус</label>
+                </td>
+                <td colspan="4">
+                    <input type="checkbox" id="idCBLiterStop" title="Останавливаться при заполнении приказа">
+                    <label for="idCBLiterStop" class="labelOrders"
+                        title="Останавливаться при заполнении приказа">Литера</label>
+                </td>
+                <td colspan="3">
+                    <span class="labelOrders">Квартира</span>
+                </td>
+            </tr>
+
+            <!--  Ввод Индекс, Город, Улица, Корпус, Литера, Квартира  -->
+            <tr align="center">
+                <td colspan="3">
+                    <input type="text" id="idBGIndex" class="selectOrders  clearValue" style="visibility: hidden">
+                </td>
+                <td colspan="6">
+                    <input id="idBGCity" class="selectOrders clearValue" style="width: 90%;">
+                </td>
+                <td colspan="7">
+                    <input list="idlistStreetBG" id="idBGStreet" class="selectOrders  clearValue" style="width: 90%;">
+                    <datalist id="idlistStreetBG">
+                        <option value="1">1</option>
+                    </datalist>
+                </td>
+                <td colspan="3">
+                    <input id="idBGHouse" class="selectOrders  clearValue" style="width: 65%;">
+                </td>
+                <td colspan="4">
+                    <input list="listKorpBG" id="idBGKorp" class="selectOrders  clearValue" style="width: 75%;">
+                    <datalist id="listKorpBG">
+                        <option value=""></option>
+                        <option value="корп.1"></option>
+                        <option value="корп.2"></option>
+                        <option value="корп.3"></option>
+                        <option value="корп.4"></option>
+                        <option value="корп.5"></option>
+                        <option value="корп.6"></option>
+                        <option value="корп.7"></option>
+                        <option value="корп.8"></option>
+                        <option value="корп.9"></option>
+                    </datalist>
+                </td>
+                <td colspan="4">
+                    <input list="listLiterBG" id="idBGLiter" class="selectOrders  clearValue" style="width: 75%;">
+                    <datalist id="listLiterBG">
+                        <option value="лит.А"></option>
+                        <option value="лит.Б"></option>
+                        <option value="лит.В"></option>
+                        <option value="лит.Г"></option>
+                        <option value="лит.Д"></option>
+                        <option value="лит.Е"></option>
+                        <option value="лит.Ж"></option>
+                        <option value="лит.З"></option>
+                        <option value="лит.К"></option>
+                    </datalist>
+                </td>
+                <td colspan="3">
+                    <input id="idBGRoom" class="selectOrders clearValue" style="width: 65%;">
+                </td>
+            </tr>
+
+            <!-- LABEL ИНН Дата и место рождения -->
+            <tr align="center">
+                <td colspan="6">
+                    <span class="labelOrders">ИНН должника</span>
+                </td>
+                <td colspan="5">
+                    <span class="labelOrders">Дата рождения</span>
+                </td>
+                <td colspan="19">
+                    <span class="labelOrders">Место рождения</span>
+                </td>
+            </tr>
+
+            <!-- ИНН Дата и место рождения -->
+            <tr align="center">
+                <td colspan="6">
+                    <!-- <input id="idBGINN" class="selectOrders" onkeyup="onlyNumerByIDfunc('idBGINN', 12)"> -->
+                    <input id="idBGINN" class="selectOrders  clearValue">
+                </td>
+                <td colspan="5">
+                    <input type="date" id="idBGDataBorn" class="selectOrders  clearValue">
+                </td>
+                <td colspan="19">
+                    <input id="idBGBornPlace" class="selectOrders  clearValue" style="width: 98%">
+                </td>
+            </tr>
+
+            <!-- LABEL 18- НЕЛЕТКА -->
+            <!-- <tr align="center" id="idTR18" style="visibility:hidden" class="labelOrders"> -->
+            <tr id="idTR18" style="visibility:hidden; text-align: center;" class="labelOrders">
+                <td colspan="2"></td>
+                <td colspan="6">Фамилия (в РП)</td>
+                <td colspan="2">Имя</td>
+                <td colspan="5">Отчество</td>
+                <td colspan="5">Дата рождения</td>
+                <td colspan="6">Место рождения</td>
+                <td colspan="4">ИНН</td>
+            </tr>
+            <!-- <tr align="center" id="idTR18" style="visibility:hidden">
+                <td colspan="2">
+                </td>
+                <td colspan="6">
+                    <span class="labelOrders">Фамилия (в РП)</span>
+                </td>
+                <td colspan="2">
+                    <span class="labelOrders">Имя</span>
+                </td>
+                <td colspan="5">
+                    <span class="labelOrders">Отчество</span>
+                </td>
+                <td colspan="5">
+                    <span class="labelOrders">Дата рождения</span>
+                </td>
+                <td colspan="6">
+                    <span class="labelOrders">Место рождения</span>
+                </td>
+                <td colspan="4">
+                    <span class="labelOrders">ИНН</span>
+                </td>
+            </tr> -->
+
+            <!-- 18- НЕЛЕТКА Ввод данных-->
+            <!-- <tr align="center" style="visibility:hidden"> -->
+            <tr align="center" style="visibility:visible">
+                <td colspan="2" style="visibility:visible">
+                    <input type="checkbox" name="CB18" id="idCB18" title="Должник - несовершеннолетнее лицо">
+                    <label for="idCB18" class="labelOrders" title="Должник - несовершеннолетнее лицо">18-</label>
+                </td>
+                <td colspan="6">
+                    <input id="id18Name1" class="selectOrders  clearValue">
+                </td>
+                <td colspan="2">
+                    <input list="list18Name2" id="id18Name2" class="selectOrders clearValue">
+                    <datalist id="list18Name2">
+                        <option value=""></option>
+                    </datalist>
+                </td>
+                <td colspan="5">
+                    <input list="list18Name3" id="id18Name3" class="selectOrders clearValue">
+                    <datalist id="list18Name3">
+                        <option value=""></option>
+                    </datalist>
+                </td>
+                <td colspan="5">
+                    <input type="date" id="id18BornData" class="selectOrders">
+                </td>
+                <td colspan="6">
+                    <input id="id18BornPlace" class="selectOrders clearValue">
+                </td>
+                <td colspan="4">
+                    <input id="id18INN" class="selectOrders clearValue">
+                </td>
+            </tr>
+
+            <tr style="height: 10px"></tr><!-- Разделитель -->
+
+            <!-- LABEL Налог, Пеня, штраф -->
+            <tr align="center">
+                <td colspan="5">
+                    <span class="labelOrders">Вид налога</span>
+                </td>
+                <td colspan="6">
+                    <span class="labelOrders"> Недоимка за период</span>
+                </td>
+                <td colspan="7">
+                    <span class="labelOrders">Недоимка в размере</span>
+                </td>
+                <td colspan="6">
+                    <input type="checkbox" id="idCBPenyPer">
+                    <label for="idCBPenyPer" class="labelOrders">Период пени указывается точно.</label>
+                </td>
+                <td colspan="6">
+                    <span class="labelOrders">Пени в размере</span>
+                </td>
+            </tr>
+
+            <!-- Налог, Пеня, штраф -->
+            <tr align="center">
+                <td colspan="5">
+                    <select name="sp" id="idTaxType" class="selectOrders">
+                        <option>Транспортный</option>
+                        <option>Имущественный</option>
+                        <option>НДФЛ</option>
+                    </select>
+                </td>
+                <td colspan="3" align="right">
+                    <input type="date" id="idTTStart" class="selectOrders">
+                </td>
+                <td colspan="3" align="right">
+                    <input type="date" id="idTTEnd" class="selectOrders">
+                </td>
+                <td colspan="7">
+                    <input id="idTTR" class="selectOrders clearValue" style="width: 70px">
+                    <span class="labelOrders">р.</span>
+                    <input id="idTTK" class="selectOrders clearValue" style="width: 40px">
+                    <span class="labelOrders">к.</span>
+                </td>
+                <td colspan="3">
+                    <input type="date" id="idPNStart" class="selectOrders" style="visibility: hidden">
+                </td>
+                <td colspan="3">
+                    <input type="date" id="idPNEnd" class="selectOrders" style="visibility: hidden">
+                </td>
+                <td colspan="6">
+                    <input id="idPNR" class="selectOrders clearValue" style="width: 70px">
+                    <span class="labelOrders">р.</span>
+                    <input id="idPNK" class="selectOrders clearValue" style="width: 40px">
+                    <span class="labelOrders">к.</span>
+                </td>
+            </tr>
+
+            <!-- КБК ОКТМО -->
+            <tr align="center">
+                <td colspan="6">
+                    <label for="selOKTMOTT" class="labelOrders">ОКТМО</label>
+                    <input name="selOKTMOTT" list="idOKTMO_TTList" id="idOKTMO_TT" class="selectOrders  clearValue"
+                        style="width: 70%">
+                    <datalist id="idOKTMO_TTList">
+                        <option value=""></option>
+                    </datalist>
+
+
+                </td>
+                <td colspan="12">
+                    <label for="SelKBKTT" class="labelOrders">КБК налог</label>
+                    <select name="selKBKTT" id="idKBKTT" class="selectOrders clearValue" style="width: 70%">
+                        <option value=""></option>
+                    </select>
+
+                </td>
+                <td colspan="12">
+                    <label for="selKBKPN" class="labelOrders">КБК пени</label>
+                    <select name="selKBKPN" id="idKBKPN" class="selectOrders clearValue" style="width: 70%">
+                        <option value=""></option>
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr style="height: 12px"></tr><!-- Разделитель -->
+
+            <!-- Добавить недоимку/пени + Редактиовать/удалить строку -->
+            <tr>
+                <td colspan="8">
+                    <button id="idBUTTT_PN_add" class="butonOrders" style="width: 80%;">Добавить недоимку/пени</button>
+                </td>
+                <td colspan="5">
+
+                </td>
+                <td colspan="18" style="text-align: right">
+                    <span class="labelOrders">Строка №</span>
+                    <select name="selStrokaEdit" id="idselStrokaEdit" class="selectOrders" style="width: 10%;">
+                        <option>!!!</option>
+                    </select>
+                    <button class="butonOrders" id="idBUTStrokaEdit"
+                        style="width: 20%; visibility: hidden">Редактировать</button>
+                    </select>
+                    <button class="butonOrders" id="idBUTStrokaDel"
+                        style="width: 20%; visibility: hidden">Удалить</button>
+                </td>
+            </tr>
+
+            <tr style="height: 12px"></tr><!-- Разделитель -->
+
+            <!-- Поле введенных налогов -->
+            <tr align="center">
+                <td colspan="30">
+                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                    <textarea id="idTextArea" name="" id="" cols="auto" rows="8" class="labelOrders"
+                        style="width: 98%; text-align: left; background-color: #cfcdc7; color: rgb(33, 49, 49);"></textarea>
+                </td>
+            </tr>
+
+            <!-- Налог, Пеня, штраф -->
+            <tr align="center">
+                <td colspan="5">
+
+                </td>
+                <td colspan="7" style="text-align: right">
+                    <span class="labelOrders" style="font-size: 17px;">Сумма взысканий (без ГП):</span>
+                </td>
+                <td colspan="7" style="text-align: left">
+                    <input id="idTaxSumR" class="selectOrders" style="width: 100px; font-size: 17px">
+                    <span class="labelOrders" style="font-size: 14px">р.</span>
+                    <input id="idTaxSumK" class="selectOrders" style="width: 70px; font-size: 17px">
+                    <span class="labelOrders" style="font-size: 14px">коп.</span>
+                </td>
+                <td colspan="3" style="text-align: right">
+                    <span class="labelOrders" style="font-size: 17px;">ГосПошлина</span>
+                </td>
+                <td colspan="8" style="text-align: left">
+                    <input id="idGPR" class="selectOrders" style="width: 100px; font-size: 17px">
+                    <span class="labelOrders" style="font-size: 14px">р.</span>
+                    <input id="idGPK" class="selectOrders" style="width: 70px; font-size: 17px">
+                    <span class="labelOrders" style="font-size: 14px">коп.</span>
+                </td>
+            </tr>
+
+            <tr style="height: 10px"></tr><!-- Разделитель -->
+
+            <!-- Команды выполнения действий -->
+            <tr align="center">
+                <td colspan="6">
+                    <button id="idBUTSaveNowData" class="butonOrders" style="font-size: 13px; width: 100%">Сохранить
+                        данные</button>
+                </td>
+                <td colspan="4">
+                    <button id="idBUTLoadNowData" class="butonOrders" style="font-size: 13px">Загрузить данные</button>
+                </td>
+                <td colspan="7">
+                    <button id="idBUTSaveAndPrintOrder" class="butonOrders"
+                        style="font-size: 13px; width: 100%">Распечатать и
+                        сохранить приказ</button>
+                </td>
+                <td colspan="5">
+                    <button id="idBUTAddOrderInReestr" class="butonOrders" style="font-size: 13px">Добавить приказ в
+                        реестр</button>
+                </td>
+                <td colspan="4">
+                    <button id="idBUTOnlySaveOrde" class="butonOrders" style="font-size: 13px">Сохранить приказ</button>
+                </td>
+                <td colspan="4">
+                    <button id="idBUTNewOrder" class="butonOrders" style="font-size: 14px">Новый приказ</button>
+                </td>
+                <td colspan="3">
+
+                </td>
+            </tr>
+
+            <tr style="height: 12px"></tr><!-- Разделитель -->
+
+        </table>
+    </div>
+
+
+    <!-- ПРИКАЗ  -->
+    <button id="idShowOrder" class="butonOrders" style="width: 15%;"
+        onclick="document.getElementById('idPageWithOrder').style.display = 'block'; makeOrder()">Просмотр
+        приказа</button>
+    <button id="idShowOrder1" class="butonOrders" style="width: 15%;"
+        onclick="document.getElementById('idPageWithOrder').style.display = 'none';">Скрыть приказ</button>
+    <button class="butonOrders" style="width: 15%" onclick=" Export2Word('exportContent', 'word-content' );">Export as
+        .doc</button>
+    <br><br><br>
+
+    <div id="idPageWithOrder" style="display: hidden; margin: 0% 10% 0% 10%;">
+        <!-- <div id="idPageWithOrder" style="display: none; margin: 0% 10% 0% 10%;"> -->
+        <div id="exportContent" style="text-align: justify; background: #ffffff">
+
+            <span style="font-size: 14pt; font-weight: bold;" name="namePrUID" id="idPrUID">*UID*</span><br>
+
+            <p style="text-align: center; font-weight: bold; font-size: 14pt;">
+                <img src="C:\Users\Public\Pictures\eagl.jpg" style="width: 65px; height: 70px;" alt="Герб РФ"><br>
+                Судебный участок № <span name='namePrNoUch'>*Nomer_Uchastka*</span>
+                Санкт-Петербурга<br><span id='idAdressUchFull'>*Adress_Uchastka_Full*</span><span
+                    id='idHttp_email'>*Http_email*</span><span id='idPhone_Fax_SU'>*Phone_Fax_SU*</span><br><br>
+                ИМЕНЕМ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
+                СУДЕБНЫЙ ПРИКАЗ<br>
+            </p>
+
+            <table border="1px" style="width: 100%; font-weight: bold; font-size: 14pt">
+                <tr>
+                    <td style="text-align: left;">
+                        <span id='idOrderData'>*OrderData*</span>
+                    </td>
+                    <td style="text-align: right;">
+                        Производство № <span id="idNumber_order">*Number_order*</span>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+
+            <p style="text-align: justify; text-indent: 30px">
+                <span id='idSudiaOrIO'>*SudiaOrIO*</span>,<br>к
+                должнику <span style="font-weight: bold" id='idName_dolgnik_2_dat'>*Name_dolgnik_2_dat*</span><span
+                    name='nameData_dolgnik'>*Data_dolgnik*</span><br>о вынесении судебного приказа на взыскание
+                *only_peny*<span id='idNSL'>*NSL*</span><br>исследовав сведения, изложенные взыскателем в заявлении о вынесении судебного
+                приказа и приложенных к нему документах, *list_of_lows* руководствуясь ст.ст.17.1, 123.1, 123.2, 123.3,
+                123.5-123.8 Кодекса административного судопроизводства Российской Федерации, суд
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">РЕШИЛ:</p>
+
+            <p style="text-align: justify;">
+                взыскать с должника <span style="font-weight: bold;" name='nameName_dolgnik_1_rod'>*Name_dolgnik_1_rod*</span><span name='nameData_dolgnik'>*Data_dolgnik*</span>
+                в пользу взыскателя
+                <span id='idVziskatel_Tax_Full'>*Vziskatel_Tax_Full*</span> *kbk_and_oktmo*: *taxAndPeni*
+            </p>
+
+            <p style="text-align: justify;">
+                Взыскать с должника <span style="font-weight: bold;" name='nameName_dolgnik_1_rod'>*Name_dolgnik_1_rod*</span> государственную пошлину в доход государства в размере
+                *Peni_Num_String*, перечислив по следующим реквизитам: <span id='idEssential_Gos_Poshlina'>*Essential_Gos_Poshlina*</span>.
+            </p>
+
+            <p style="text-align: justify;" padStart>
+                <span  id='idEnding_Order'>*Ending_Order*</span>
+            </p>
+
+            <table style="width: 100%;" border="1px">
+                <tr>
+                    <td style="text-align: left; width: 60%">
+                        Мировой судья *String_PODPIS*<br>*SudiaOrIOPodpis*
+                    </td>
+                    <td style="text-align: right; width: 40%; vertical-align: top;">*Copy_Right*</td>
+                </tr>
+
+            </table>
+
+            <!-- Пока работающий разрыв страницы -->
+            <br style="page-break-after: always">
+
+            <div>
+                <table style="width: 100%; text-align: justify; border: 1px solid black;" border="1px">
+                    <tr>
+                        <td style="text-align: center; width: 55%">
+                            <img id="idImg21" src="C:\Users\Public\Pictures\gerbspb.jpg" style="width: 50px; height: 60px;"><br>
+                            СУДЕБНЫЙ УЧАСТОК № <span name='namePrNoUch'>*Nomer_Uchastka*</span><br>
+                            САНКТ-ПЕТЕРБУРГА<br>
+                            *SudiaOrIO1*<br>
+                            <span name='nameAdress_Uchastka_1'>*Adress_Uchastka_1*</span><br>
+                            <span name='nameAdress_Uchastka_2'>*Adress_Uchastka_2*</span><br>
+                            <span name='namePhone_Fax_Uchastka'>*Phone_Fax_Uchastka*</span><br>
+                            <br>
+                            <span style="text-decoration: underline;"> <span name='nameshort_date_order'>*short_date_order*</span> № <span name='namenumber_order'>*number_order*</span><span>
+                            <br><br><br><br>
+                        </td>
+                        <td style="width: 1%"></td>
+                        <td style="vertical-align: 0px ; text-align: right; width: 44%; vertical-align: top;">
+                            <img id="idImg22" src="C:\Users\Public\Pictures\gerbspb.jpg" style="width: 50px; height: 60px; visibility: hidden;"><br>
+                            *Name_dolgnik_2_dat*<br>
+                            *Adress_Sopr*<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span name='nameText_Sopr'>*Text_Sopr*</span><br><br><br><br><br></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">*Pismo_Podpis_Doljnost*<br><br><br><br></td>
+                        <td style="width: 2%"></td>
+                        <td style="text-align: right; vertical-align: top; ">*Sekretar_SZ*</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="namesArray.js"></script>
+    <script src="data.js"></script>
+    <script src="initialization.js"></script>
+    <script src="changeSurnameMW.js"></script>
+    <script src="essential.js"></script>
+
+    <script>//Загрузка приказа в ворд
+        function Export2Word(element, filename = '') {
+            let preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+            let postHtml = "</body></html>";
+            let html = preHtml + document.getElementById(element).innerHTML + postHtml;
+            let blob = new Blob(['\ufeff', html], {
+                type: 'application/msword'
+            });
+            let url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);// Specify link url
+            filename = filename ? filename + '.doc' : 'document.doc';// Specify file name
+            let downloadLink = document.createElement("a");// Create download link element
+            document.body.appendChild(downloadLink);
+            if (navigator.msSaveOrOpenBlob) {
+                navigator.msSaveOrOpenBlob(blob, filename);
+            } else {
+                downloadLink.href = url;// Create a link to the file                
+                downloadLink.download = filename;// Setting the file name                
+                downloadLink.click();//triggering the function
+            }
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+
+</body>
+
+</html>

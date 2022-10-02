@@ -1,0 +1,223 @@
+/* MAIN MENU **********************************************************************************************/
+/* MAIN MENU: BUTTON */
+.butonMainMenu {
+    margin-top: 25px;
+    height: 50px;
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'arial';
+    font-style: italic;
+    color: rgb(80, 76, 43);
+
+    background: linear-gradient(to right, #adaba1 10%, #d1cfc8 40%, #d1cfc8 60%, #adaba1 90%);
+    background-color: #000;
+
+    border: 2px solid rgb(75, 69, 69);
+    border-radius: 10px;
+
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px rgb(80, 77, 77);
+}
+
+.butonMainMenu:hover {
+    filter: brightness(110%);
+    font-size: 21px;
+    background: linear-gradient(to right, #d1cfc8 10%, #adaba1 40%, #adaba1 60%, #d1cfc8 90%);
+    transition: 0.1s linear;
+    /* border: 15px; */
+}
+
+.butonMainMenu:focus {
+    background: rgb(228, 227, 230);
+}
+
+.butonMainMenu:active {
+    filter: brightness(110%);
+    box-shadow: 3px 3px 5px 0px rgb(255, 255, 255);
+}
+
+/* MAIN MENU: LABEL */
+.labelMainMenu {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: #5e5e41;
+    font-family: 'Arial';
+}
+
+/* MAIN MENU.HTML - END ***********************************************************************************/
+/* ORDERS.HTML - START*************************************************************************************/
+/* ORDERS: SELECT */
+.selectOrders {
+    margin: 3px;
+    width: 90%;
+    height: 25px;
+    background-color: #b7b8a6;
+    color: #444434;
+    border: 2px solid #969784;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Arial';
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #69695e;
+}
+
+.selectOrders:focus {
+    background: rgb(228, 227, 230);
+}
+
+.selectOrders option {
+    background: #b7b8a6;
+}
+
+/* ORDERS: SELECT */
+/* ORDERS: BUTTON */
+.butonOrders {
+    height: 25px;
+    margin: 3px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Arial';
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(80, 76, 43);
+    border: 2px solid #969784;
+    border-radius: 4px;
+    background: linear-gradient(to right, #adaba1 10%, #d1cfc8 40%, #d1cfc8 60%, #adaba1 90%);
+    box-shadow: 2px 2px 2px 2px rgb(100, 96, 96);
+}
+
+.butonOrders:hover {
+    filter: brightness(110%);
+    font-size: 15px;
+    background: linear-gradient(to right, #d1cfc8 10%, #adaba1 40%, #adaba1 60%, #d1cfc8 90%);
+    transition: 0.1s linear;
+}
+
+.butonOrders:focus {
+    background: rgb(228, 227, 230);
+}
+
+.butonOrders:active {
+    filter: brightness(125%);
+    box-shadow: 3px 3px 5px 0px rgb(255, 255, 255);
+    /* box-shadow: 3px 3px 5px 0px rgb(241, 253, 64); */
+}
+
+/* ORDERS: BUTTON */
+
+/* ORDERS: LABEL */
+.labelOrders {
+    /* margin-top: 15px; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Arial';
+    color: #69695e;
+}
+
+/* ORDERS: LABEL */
+/* ORDERS.HTML*********************************************************************************************/
+.testim {
+    color: #e2e48a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ВСЯКАЯ ХРЕНЬ ********************************************************************************************** */
+
+.test2 {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #000;
+    background-color: rgb(0, 119, 255);
+}
+
+.labSel {
+    font-size: 20px;
+}
+
+.label {
+    /* background: #17c197; */
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Arial';
+
+}
+
+.buton:hover {
+    filter: brightness(150%);
+    font-size: 22px;
+    transition: .1s linear;
+    /* background-color: rgb(41, 38, 38); */
+}
+
+.buton:active {
+    filter: brightness(300%);
+}
+
+.buton1 {
+    text-align: center;
+    margin: 15px;
+    /* width: 400px; */
+    height: 50px;
+    border: 2px solid rgb(75, 69, 69);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'arial';
+    font-style: italic;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(80, 77, 77);
+    /* background-image: radial-gradient(190% 100% at 50% 0%, rgba(255, 0, 0, 0.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%); */
+
+}
+
+.select {
+    text-align: center;
+    margin: 15px;
+    /* width: auto; */
+    /* min-width: 50px; */
+    height: 50px;
+    border: 2px solid rgb(75, 69, 69);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'arial New';
+    font-style: italic;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(80, 77, 77);
+
+}

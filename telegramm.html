@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Телграммы. Почтовый реестр.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <label for="idNamesNames21">К ДОЛЖНИКУ</label><br>
+    <input type="text" id="idNamesNames21" placeholder="Имя в Дательном падеже" onkeyup="return noEngChar(this);">
+    <br>
+    <label for="idNamesNames22">С ДОЛЖНИКА</label><br>
+    <input type="text" id="idNamesNames22" placeholder="Имя в Родительном падеже">
+
+    <script src="names3.js"></script>
+
+    <script>
+        function noEngChar(input) {
+            var value = input.value;
+            var rep = /[-\.,\ /;":'a-zA-Z0-9]/;
+            // var rep = /[+\.;":'a-zA-Zа-яА-Я]/; 
+            if (rep.test(value)) {
+                value = value.replace(rep, '');
+                input.value = value;
+                let audio = new Audio('beep.mp3');
+                audio.play();
+            }
+        } 
+    </script>
+
+</body>
+
+</html>

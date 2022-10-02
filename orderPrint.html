@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Судебный приказ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button onclick="Export2Word('exportContent', 'word-content');">Export as .doc</button>
+    <div id="exportContent" style="text-align: justify;">
+
+        *UID*<br>
+
+        <p style="text-align: center; font-weight: bold; font-size: 14pt;">
+            <img src="eagl.jpg" style="width: 50px; height: 60px;"><br>
+            Судебный участок № *Nomer_Uchastka*
+            Санкт-Петербурга<br>*Adress_Uchastka_Full*<br>*Http_email*<br>*Phone_Fax_Uchastka*<br><br>
+
+            ИМЕНЕМ РОССИЙСКОЙ ФЕДЕРАЦИИ<br>
+            СУДЕБНЫЙ ПРИКАЗ<br>
+        </p>
+
+        <table border="1px" style="width: 100%">
+            <tr>
+                <td style="text-align: left; font-weight: bold;">
+                    day_order* *mounth_order* *year_order*
+                </td>
+                <td style="text-align: right; font-weight: bold;">
+                    * года Производство № *number_order*
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+
+        <p style="text-align: justify; text-indent: 30px">
+            *SudiaOrIO*, рассмотрев заявление взыскателя – *Vziskatel_Tax_Short*<br>к должнику *Name_dolgnik_2_dat*,
+            *Data_dolgnik*<br>о вынесении судебного приказа на взыскание *only_peny**NSL*<br>исследовав сведения,
+            изложенные взыскателем в заявлении о вынесении судебного приказа и приложенных к нему документах,
+            *list_of_lows* руководствуясь ст.ст.17.1, 123.1, 123.2, 123.3, 123.5-123.8 Кодекса административного
+            судопроизводства Российской Федерации, суд
+        </p>
+
+        <p style="text-align: center; font-weight: bold;">РЕШИЛ:</p>
+
+        <p style="text-align: justify;">
+            взыскать с должника *Name_dolgnik_1_rod*, *Data_dolgnik*
+            в пользу взыскателя
+            *Vziskatel_Tax_Full**kbk_and_oktmo*:*taxAndPeni1**taxAndPeni2**taxAndPeni3**taxAndPeni4**taxAndPeni5**taxAndPeni6*
+        </p>
+
+        <p style="text-align: justify;">
+            Взыскать с должника *Name_dolgnik_1_rod* государственную пошлину в доход государства в размере
+            *Peni_Num_String*, перечислив по следующим реквизитам: *Essential_Gos_Poshlina*
+        </p>
+
+        <p>
+            *Ending_Order*
+        </p>
+
+        <table style="width: 100%;" border="1px">
+            <tr>
+                <td style="text-align: left; width: 60%">
+                    Мировой судья *String_PODPIS*<br>*SudiaOrIOPodpis*
+                </td>
+                <td style="text-align: right; width: 40%; vertical-align: 0px;">*Copy_Right*</td>
+            </tr>
+
+        </table>
+
+        <!-- Пока работающийразрыв страницы -->
+        <br style="page-break-after: always">
+
+        <div>
+            <!-- <div style="page-break-after: always;"> -->
+            <table style="width: 100%; text-align: justify; border: 1px solid black;" border="1px">
+                <tr>
+                    <td style="text-align: center; width: 48%">
+                        <img src="gerbjpg.jpg" style="width: 50px; height: 60px;"><br>
+                        СУДЕБНЫЙ УЧАСТОК № *Nomer_Uchastka*<br>
+                        САНКТ-ПЕТЕРБУРГА<br>
+                        *SudiaOrIO1*<br>
+                        *Adress_Uchastka_1*<br>
+                        *Adress_Uchastka_2*<br>
+                        *Phone_Fax_Uchastka*<br>
+                        <br>
+                        *short_date_order* № *number_order*
+                        <br><br><br><br>
+                    </td>
+                    <td style="width: 4%"></td>
+                    <td style="vertical-align: 0px ; text-align: right; width: 48%; ">
+                        *Name_dolgnik_2_dat*<br>
+                        *Adress_Sopr*<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">*Text_Sopr*<br><br><br><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; width: 48%">*Pismo_Podpis_Doljnost*<br><br><br><br></td>
+                    <td style="width: 4%"></td>
+                    <td style="text-align: right; width: 48%; ">*Sekretar_SZ*</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; width: 48%">
+                        <img src="gerbjpg.jpg" style="width: 50px; height: 60px;"><br>
+                        СУДЕБНЫЙ УЧАСТОК № *Nomer_Uchastka*<br>
+                        САНКТ-ПЕТЕРБУРГА<br>
+                        *SudiaOrIO1*<br>
+                        *Adress_Uchastka_1*<br>
+                        *Adress_Uchastka_2*<br>
+                        *Phone_Fax_Uchastka*<br>
+                        <br>
+                        *short_date_order* № *number_order*
+                        <br><br><br><br>
+                    </td>
+                    <td style="width: 4%"></td>
+                    <td style="vertical-align: 0px ; text-align: right; width: 48%; ">
+                        *Name_dolgnik_2_dat*<br>
+                        *Adress_Sopr*<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">*Text_Sopr*<br><br><br><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; width: 48%">*Pismo_Podpis_Doljnost*</td>
+                    <td style="width: 4%"></td>
+                    <td style="text-align: right; width: 48%; ">*Sekretar_SZ*</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        function Export2Word(element, filename = '') {
+            let preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+            let postHtml = "</body></html>";
+            let html = preHtml + document.getElementById(element).innerHTML + postHtml;
+
+            let blob = new Blob(['\ufeff', html], {
+                type: 'application/msword'
+            });
+
+            let url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);// Specify link url
+            filename = filename ? filename + '.doc' : 'document.doc';// Specify file name
+            let downloadLink = document.createElement("a");// Create download link element
+            document.body.appendChild(downloadLink);
+
+            if (navigator.msSaveOrOpenBlob) {
+                navigator.msSaveOrOpenBlob(blob, filename);
+            } else {
+                downloadLink.href = url;// Create a link to the file                
+                downloadLink.download = filename;// Setting the file name                
+                downloadLink.click();//triggering the function
+            }
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+
+    
+
+</body>
+
+</html>

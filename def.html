@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>def.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    Имя <input id="id1" value="Василий первый">
+    Фамилия <input id="id2" value="Первый Федор">
+    <br><br><br>
+    <input type="button" value="Сохранить" onclick="saveFunc()">
+    <br><br><br><br><br><br>
+
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+    <br><br><br>
+    <input type="file" id="load" onclick="loadFunc()">
+
+    <script>
+
+
+function saveFunc() {
+                let names = document.getElementById('id1').value;
+                let surnames = document.getElementById('id2').value;
+
+                let inf = [];
+                inf.push(names);
+                inf.push(surnames);
+                let inf_string = JSON.stringify(inf);
+                let file_def = new Blob([inf_string], { type: "text" });
+                let saver = document.createElement('a');
+                saver.href = URL.createObjectURL(file_def);
+                saver.download = 'def1.txt'
+                saver.click();
+            }
+        function loadFunc() {
+            // let file_def = new Blob([inf_string], { type: "text" });
+            file_def = document.getElementById('load').files[0];
+            let reader = new FileReader();
+
+            reader.onload = function () {
+                // reader.addEventListener("loadend", ()=>{
+                let load = JSON.parse(reader.result)[0];
+                document.getElementById("textarea").value = load;
+                alert("ну типа");
+            }
+            reader.onerror = function () {
+                console.log(reader.error);
+            }
+            reader.progress = function () {
+                console.log("ридинг");
+            }
+            reader.readAsText(file_def);
+
+        }
+
+            
+    </script>
+
+</body>
+
+</html>
