@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Программа КАС. Выбор участка.</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<!-- <body style="background-color: #d1cfc8"> -->
+
+<body style="background:linear-gradient(to right, #d1cfc8, #adaba1, #d1cfc8)">
+    <!-- <body style="background:linear-gradient(to right, #adaba1, #d1cfc8, #adaba1)"> -->
+
+    <!-- <input type="text" id="idi"> -->
+    <!-- <button id="idb">Сохранить JSON</button> -->
+    
+    <!--ВЫБОР РЕГИОНА-->
+    <div class="label">
+        <label for="selectRegion" class="labelMainMenu"><b>ВЫБОР РЕГИОНА</b></label><br>
+        <select name="selectRegion" class="butonMainMenu" required>
+            <option value="78">78 - Санкт-Петербург</option>
+            <option value="47">47 - Ленинградская область</option>
+            <option value="77">77 - МОСКВА</option>
+        </select>
+        <br>
+        <br>
+
+        <!--ВЫБОР СУДЕБНОГО УЧАСТКА-->
+        <table border="0px" align="center">
+            <thead><label for="selectMSU" class="labelMainMenu"><b>ВЫБОР УЧАСТКА</b></label></thead>
+            <tr>
+                <td>
+                    <select id="idNomerUchastka" class="butonMainMenu" name="selectMSU" style="width: 80px">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7" selected>7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </td>
+                <td style="width: 350px">
+                    <button onclick="window.location.href = 'select.html';" class="butonMainMenu"
+                        class="labelMainMenu">Установить по умолчанию</button><br>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <!--ВЫБОР СОЗДАВАЕМОГО ДОКУМЕНТА-->
+        <span class="labelMainMenu"><b><i>ВЫБОР ДОКУМЕНТА ДЛЯ ПОДГОТОВКИ</i></b></span>
+        <br>
+        <!-- Судебный приказ -->
+        <button onclick="window.location.href = 'orders.html';" class="butonMainMenu" ;>Судебный приказ</button><br>
+        <!-- Телеграммы + реестр -->
+        <button onclick="window.location.href = 'telegramm.html';" class="butonMainMenu">Телеграммы +
+            реестр</button><br>
+        <!-- Реквизиты МИФНС -->
+        <button class="butonMainMenu">Реквизиты МИФНС</button><br>
+
+
+        <!-- КНОПЫ ТЕСТОВ -->
+        <button onclick="window.location.href = 'testJS.html';" class="butonMainMenu">read_write_JS.html</button>
+        <button onclick="window.location.href = 'def.html';" class="butonMainMenu">def.html</button>
+        <button onclick="window.location.href = 'AAA.html';" class="butonMainMenu">AAA.html</button>
+        <button onclick="window.location.href = 'BBB.html';" class="butonMainMenu">BBB.html</button>
+        <button onclick="window.location.href = '000.html';" class="butonMainMenu">000.html</button>
+        <button onclick="window.location.href = '0_read_n_save_file.html';" class="butonMainMenu">0_read_n_save_file.html</button>
+        <button onclick="window.location.href = 'jastNumber.html';" class="butonMainMenu">Тест
+            jastNumber.html</button><br>
+        <br>
+        <span class="labelMainMenu"><b>Во избежание потери данных, перед началом работы с программой
+                сохраните и закройте все Ваши файлы в приложениях <i>Microsoft Word</i> и <i>Microsoft Excel.</i></b>
+        </span>
+
+    </div>
+
+
+
+</body>
+
+</html>
